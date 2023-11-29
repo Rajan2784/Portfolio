@@ -23,7 +23,7 @@ const Header = () => {
             <div className={toggle ? "nav_menu show-menu" : "nav_menu"}>
                 <ul className="nav__list grid">
                     <li className="nav_item">
-                        <a href="#home" className={activeNav === "#home" ? "nav__link active-link" : "nav__link" } onClick={()=>setActiveNav("#home")}>
+                        <a href="/" className={activeNav === "#home" ? "nav__link active-link" : "nav__link" } onClick={()=>setActiveNav("#home")}>
                         <AiOutlineHome className='nav__icon'  /> Home
                         </a>
                     </li>
