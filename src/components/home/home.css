@@ -31,10 +31,10 @@
 }
 
 .home__hand{
-    width: 40px;
-    height: 40px;
+    width: 3rem;
+    height: 3rem;
     margin-left: 5px;
-    animation: shake 1s ease-in-out infinite alternate;
+    animation: shake 2s infinite alternate;
 }
 
 @keyframes shake {
@@ -42,6 +42,12 @@
         transform: rotate(-15deg);
     }
     50%{
+        transform: rotate(15deg);
+    }
+    75%{
+        transform: rotate(-15deg);
+    }
+    100%{
         transform: rotate(15deg);
     }
 }
@@ -135,8 +141,8 @@
     }
 
     .home__hand{
-        width: 26px;
-        height: 26px;
+        width: 2rem;
+        height: 2rem;
     }
 
     .home__subtitle {
@@ -205,7 +211,7 @@
     }
 
     .home__hand{
-        width: 32px;
-        height: 32px;
+        width: 2rem;
+        height: 2rem;
     }
   }

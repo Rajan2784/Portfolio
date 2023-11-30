@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { AiOutlineHome, AiOutlineMessage, AiOutlineAppstore } from "react-icons/ai"
 import { FaRegUser } from "react-icons/fa"
 import { RiFileShieldLine } from "react-icons/ri";
@@ -7,17 +7,37 @@ import { IoIosCloseCircleOutline } from "react-icons/io";
 import './header.css'
 
 const Header = () => {
-    window.addEventListener("scroll",function () {
-        const headerElement = this.document.querySelector(".header");
-        if(this.scrollY >= 80) headerElement.classList.add('show-header')
-        else headerElement.classList.remove('show-header')
-    })
+    
+    const [show, setShow] = useState("top");
+    const [lastScrollY, setLastScrollY] = useState(0);
+
+    const controlNavbar = () =>{
+        if(window.scrollY>200){
+          if(window.scrollY > lastScrollY){
+            setShow("hide")
+          }else{
+            setShow("show")
+          }
+        }else{
+          setShow("top")
+        }
+        
+        setLastScrollY(window.scrollY)
+      }
+  
+      useEffect(()=>{
+        window.addEventListener("scroll",controlNavbar)
+        return () => {
+          window.removeEventListener("scroll",controlNavbar)
+        }
+      },[lastScrollY])
+  
 
     const [toggle,showMenu] = useState(false);
     const [activeNav, setActiveNav] = useState("#home")
 
   return (
-    <header className={`header`}>
+    <header className={`header ${show}`}>
         <nav className='nav container'>
             <a href="/" className='nav__logo'>Rajan</a>
             <div className={toggle ? "nav_menu show-menu" : "nav_menu"}>
@@ -57,7 +77,7 @@ const Header = () => {
             </div>
 
             <div className="nav__toggle" onClick={()=>showMenu(!toggle)}>
-            <AiOutlineAppstore />
+            <AiOutlineAppstore className='nav__icon' />
             </div>
         </nav>
     </header>

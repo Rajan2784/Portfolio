@@ -4,7 +4,6 @@
     top: 0;
     left: 0;
     z-index: var(--z-fized);
-    background-color: var(--body-color);
 }
 
 .nav{
@@ -13,6 +12,17 @@
     justify-content: space-between;
     align-items: center;
     column-gap: 1rem;
+}
+
+.top {
+    background-color: var(--body-color);
+}
+.show {
+    background-color: var(--black3);
+}
+
+.hide {
+    top: -50%;
 }
 
 .nav__logo
@@ -60,8 +70,11 @@
 
 @media screen and (max-width: 768px) {
     .header{
-        top: initial;
-        bottom: 0;
+        top: -2px;
+    }
+
+    .hide{
+        top: -100%;
     }
 
     .nav{
@@ -70,7 +83,7 @@
 
     .nav_menu{
         position: fixed;
-        bottom: -100%;
+        top: -100%;
         left: 0;
         width: 100%;
         background-color: var(--body-color);
@@ -82,7 +95,7 @@
     }
 
     .show-menu{
-        bottom: 0;
+        top: 0;
     }
 
     .nav__list{
@@ -92,13 +105,13 @@
     }
 
     .nav__icon{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     .nav__close{
         position: absolute;
         right: 1.3rem;
-        bottom: 0.5rem;
+        top: 0.5rem;
         font-size: 1.5rem;
         cursor: pointer;
         color: var(--title-color);

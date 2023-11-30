@@ -12,7 +12,7 @@ const Contact = () => {
       e.preventDefault();
   
       emailjs.sendForm('service_o53cjri', 'template_q6pxo0c', form.current, 'jCv016-NFRdLl9gZ-')
-        e.target.result()
+      e.target.reset();
     };
 
 
@@ -53,7 +53,7 @@ const Contact = () => {
                         <label className="contact__form-tag">Message</label>
                         <textarea name="message" className='contact__form-input' cols="30" rows="10" placeholder='Write your message'></textarea>
                     </div>
-                    <button className="button button--flex">
+                    <button className="button button--flex" type='submit'>
                         Send Message
                         <svg
                             className="button__icon"
