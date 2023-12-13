@@ -2,7 +2,7 @@ import movix from "../../assets/movix.png";
 import java from "../../assets/java.png";
 import landing from "../../assets/landing.png";
 import age from "../../assets/age.png";
-
+import youtube from "../../assets/youtube.png"
 
 export const projectsData = [
     {
@@ -60,6 +60,13 @@ export const projectsData = [
       title: "Todo App",
       category: "java",
       link: "https://github.com/Rajan2784/Todo_App",
+    },
+    {
+      id: 9,
+      image: youtube,
+      title: "Youtube Clone",
+      category: "web",
+      link: "https://github.com/Rajan2784/YouTubeClone",
     },
     
   ];
