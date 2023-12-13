@@ -3,6 +3,7 @@ import java from "../../assets/java.png";
 import landing from "../../assets/landing.png";
 import age from "../../assets/age.png";
 import youtube from "../../assets/youtube.png"
+import ecomm from "../../assets/ecomm.png"
 
 export const projectsData = [
     {
@@ -14,7 +15,7 @@ export const projectsData = [
     },
     {
       id: 2,
-      image: "blob:https://vercel.com/e8e4e954-fddc-4904-aa87-ed10526a8b1d",
+      image: ecomm,
       title: "E-Commerce",
       category: "web",
       link: "https://e-commerce-dun-ten.vercel.app/",
