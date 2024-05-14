@@ -1,7 +1,7 @@
 import React from 'react'
 import './about.css'
 import AboutImg from "../../assets/profile.jpg"
-import CV from "../../assets/Rajan's_Resume.pdf"
+import CV from "../../assets/MyResume.pdf"
 import Info from './Info'
 
 const About = () => {
@@ -17,7 +17,7 @@ const About = () => {
                 <Info />
 
                 <p className="about__description">
-                    Web developer, I create web pages with UI / UX user interface. I have created several projects in web by using React.js and Java.
+                Aspiring Frontend Developer with a strong foundation in HTML, CSS, and JavaScript, complemented by hands-on experience in building projects using React, Tailwind CSS, and other frameworks. Self-motivated and detail-oriented, with a portfolio showcasing innovative projects demonstrating proficiency in frontend development concepts. Eager to contribute enthusiasm, creativity, and a commitment to learning to a dynamic development team.
                 </p>
 
                 <a href={CV} download="" className="button button--flex">

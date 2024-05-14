@@ -4,12 +4,13 @@ import landing from "../../assets/landing.png";
 import age from "../../assets/age.png";
 import youtube from "../../assets/youtube.png"
 import ecomm from "../../assets/ecomm.png"
+import blog from "../../assets/web-dark.png"
 
 export const projectsData = [
     {
       id: 1,
       image: movix,
-      title: "Movix Web",
+      title: "Movix Web(TMDB Api Server is Down) ",
       category: "web",
       link: "https://movie-psi-one.vercel.app/",
     },
@@ -22,17 +23,17 @@ export const projectsData = [
     },
     {
       id: 3,
-      image: java,
-      title: "Online BookStore",
-      category: "java",
-      link: "https://github.com/Rajan2784/OnlineBookStore",
+      image: blog,
+      title: "Blog Application",
+      category: "Web",
+      link: "https://blog-application-nine-ivory.vercel.app/",
     },
     {
       id: 4,
-      image: java,
-      title: "ATM Interface",
-      category: "java",
-      link: "https://github.com/Rajan2784/Java_Projects/tree/main/atm",
+      image: youtube,
+      title: "Youtube UI Clone",
+      category: "web",
+      link: "https://github.com/Rajan2784/YouTubeClone",
     },
     {
       id: 5,
@@ -48,13 +49,13 @@ export const projectsData = [
       category: "web",
       link: "https://rajan2784.github.io/AgeCalculator/",
     },
-    {
-      id: 7,
-      image: java,
-      title: "Car Rental System",
-      category: "java",
-      link: "https://github.com/Rajan2784/Car-Rental-System",
-    },
+    // {
+    //   id: 7,
+    //   image: java,
+    //   title: "Car Rental System",
+    //   category: "java",
+    //   link: "https://github.com/Rajan2784/Car-Rental-System",
+    // },
     {
       id: 8,
       image: java,
@@ -69,14 +70,14 @@ export const projectsData = [
       category: "java",
       link: "https://github.com/Rajan2784/Todo_App",
     },
+
     {
       id: 10,
-      image: youtube,
-      title: "Youtube Clone",
-      category: "web",
-      link: "https://github.com/Rajan2784/YouTubeClone",
+      image: java,
+      title: "ATM Interface",
+      category: "java",
+      link: "https://github.com/Rajan2784/Java_Projects/tree/main/atm",
     },
-    
   ];
   
 export const projectsNav = [
