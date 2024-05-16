@@ -28,7 +28,7 @@ const Contact = () => {
                     <div className="contact__card">
                         <MdOutlineEmail className='contact__card-icon' />
                         <h3 className="contact__card-title">Email</h3>
-                        <span className="contact__card-data">user@gmail.com</span>
+                        <span className="contact__card-data">rajansingh6616@gmail.com</span>
 
                         <a href="mailto:examplemail@gmail.com.com" className="contact__button">Email to me  <FaArrowRight className='contact__button-icon' /></a>
                     </div>
